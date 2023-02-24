@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<style>
+    * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+*:focus{
+  outline: none;
+}
+html {
+  height: 100%;
+  font-family: Times;
+  font-size: 16px;
+}
+body {
+  background-color:lightblue;
+  margin: 0px;
+  padding: 10px;
+  overflow-x: hidden;
+}
+.profile-card {
+  -webkit-box-shadow: 0px 0px 20px #000;
+     -moz-box-shadow: 0px 0px 20px #000;
+          box-shadow: 0px 0px 20px #000;
+  margin: 60px auto 10px auto;
+  max-width: 320px;
+  position: relative;
+  width: 100%;
+}
+.profile-card .image {
+  background-color: white;
+  border-radius: 50%;
+  height: 110px;
+  left: 50%;
+  margin-left: -55px;
+  overflow: hidden;
+  padding: 5px;
+  position: absolute;
+  top: -55px;
+  width: 110px;
+}
+.profile-card .image img {
+  border: none;
+  border-radius: 50%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.profile-card .header {
+  background-color: white;
+  
+  color: black;
+  padding: 10px;
+}
+.profile-card .header .title {
+  margin-bottom: 10px;
+  margin-top: 45px;
+  padding: 10px;
+}
+.profile-card .header .title span {
+  display: block;
+  padding: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 1px solid #777;
+  font-weight: normal;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+.wrapper {
+  display: inline-flex;
+  justify-content: center;
+}
+.wrapper i {
+  padding: 27px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 150ms;
+}
+.wrapper a:nth-child(1) {
+  color: #dd4b39;
+}
+.wrapper a:nth-child(2) {
+  color: #4867AA;
+}
+.wrapper a:nth-child(3) {
+  color: #1DA1F2;
+}
+.wrapper i:hover {
+  margin-top: -3px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+#follow{
+margin:8px;
+background-color:red;
+color:white;
+height:40px;
+border-radius:9px;
+margin-left:9em;
+}
+</style>
+<html>
+ <head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Profile Card</title> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+ </head>
+ <body>
+  <div class="profile-card">
+    <div class="image">
+   <a href="https://ibb.co/tx5yZfY"><img src="https://i.ibb.co/tx5yZfY/FB-IMG-1673537245414.webp" alt="FB-IMG-1673537245414"></a>
+    </div>
+    <div class="image-shadow"></div>
+    <div class="header">
+      <div class="title">
+        <span><b>SAYRELLE JAMES TIRON</b></span>
+        <span><i>"Hindi Bumabalik sa Ex."</i></span>
+      </div>
+          <h2><b>About</b></h2>
+          <p>Hey Hello! Firstly Welcome to my profile card. I am Sayrelle James Tiron from Cabatuan, Iloilo, Philippines</p>
+          <p>I am BSIT student of PHINMA University of Iloilo.</p> 
+        </div>
+          <div class="profile">
+                  <a href="https://www.facebook.com/seileljeimseu"><button id="follow">Follow me</button></a>
+              </div> 
+         </div>        
+    </div>
+  </div>
+ </body>
+</html>
